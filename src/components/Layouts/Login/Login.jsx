@@ -8,7 +8,7 @@ const Login = () => {
         {" "}
         <title>Login | Firebase</title>
       </Helmet>
-      <h1>Login</h1>
+      <button>Login with Google</button>
     </div>
   );
 };

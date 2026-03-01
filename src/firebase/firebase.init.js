@@ -1,7 +1,8 @@
 // do not store config on the client side
 
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+// import { getAnalytics } from "firebase/analytics";
+import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: "AIzaSyB3tv4v2Zok9eRRv8Lwnx2yqZ1cupYRxMc",
@@ -15,6 +16,10 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+// Initialize Firebase Authentication and get a reference to the service
+const auth = getAuth(app);
 
-export default app;
+// const analytics = getAnalytics(app);
+
+// export default app;
+export default auth;
